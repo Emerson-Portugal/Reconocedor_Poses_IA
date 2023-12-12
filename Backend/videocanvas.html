@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video en Canvas</title>
+  <link rel="stylesheet" href="styles2.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils@0.1/control_utils.css" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils@0.1/control_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils@0.2/drawing_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose@0.2/pose.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/4ec250f4be.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <video class="video" controls muted>
+  </video>
+  <canvas class="canvas2" style="border:1px solid #000;"></canvas>
+  <div class="control5"></div>
+
+  <div class="custom-video-player">
+    <video class="myvideo" id="myVideo"s>
+        <source src="chocolateo.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+    
+    <div class="controls">
+        <button id="playPauseBtn">
+          <i class="fas fa-play"></i>
+        </button>
+        <div class="progress-bar">
+            <div class="progress"></div>
+            
+        </div>
+        <div class="volume-bar">
+            <input type="range" id="volumeRange" min="0" max="1" step="0.1" value="1">
+        </div>
+    </div>
+  </div>
+
+  <!-- Enlaza el archivo script.js -->
+  <script src="script2.js"></script>
+  <script src="video_player.js"></script>
+
+</body>
+</html>
